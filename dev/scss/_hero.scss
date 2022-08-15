@@ -2,12 +2,65 @@
 //   width: 100%;
 //   height: 75vh;
 // }
-// .slick-list,
-// .slick-track {
-//   height: 100%;
-// }
-
+.slick-list,
+.slick-track {
+  height: 100%;
+}
+.hero {
+  position: relative;
+  height: 75vh;
+  margin-top: 3rem;
+  a,
+  a:visited {
+    border-radius: 5%;
+    background-color: #fc851e;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+.image-button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 1rem;
+  margin: auto;
+  height: 2rem;
+  width: 2rem;
+  z-index: 99;
+  background: none;
+  border: none;
+  & i {
+    color: #fc851e;
+    font-size: 4rem;
+  }
+}
+.right {
+  left: unset;
+  right: 1rem;
+}
 .slide-1 {
   background: url("../images/banner-01-speaker-black.jpg");
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #666;
+
+  & > div {
+    position: absolute;
+    right: 0;
+    top: 4rem;
+    width: 50%;
+    padding: 2rem;
+    background-color: #ffffffa4;
+    h2 {
+      text-transform: unset;
+      margin-bottom: 2rem;
+    }
+  }
+}
+.slide-2 {
 }
