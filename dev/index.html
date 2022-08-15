@@ -17,13 +17,27 @@
 
     <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
     <link rel="stylesheet" href="styles/styles.css?cachebuster=1" />
-    <script src="scripts/script.min.js?cachebuster=1" defer></script>
+
     <script src="scripts/libs/jquery/jquery-3.6.0.min.js" defer></script>
+
     <script
       src="https://kit.fontawesome.com/e138a4b372.js"
       crossorigin="anonymous"
       defer
     ></script>
+    <!-- Slick CDN -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+      defer
+    ></script>
+    <!-- End Slick CDN -->
+    <script src="scripts/script.min.js?cachebuster=1" defer></script>
   </head>
   <body>
     <header id="top">
@@ -44,13 +58,22 @@
       </nav>
     </header>
     <main>
-      <section class="hero">
-        <!-- Actual Src img Size = 1520x800 -->
-        <!-- IMG ./images/banner-01-speaker-black.jpg -->
-        <div>
-          <h1>Spotify, Pandora</h1>
-          <h2>All your favorite music apps play instantly</h2>
-          <a href="#">Shop wireless speakers</a>
+      <section class="hero slider">
+        <div class="slide-1">
+          <!-- Actual Src img Size = 1520x800 -->
+          <!-- IMG ./images/banner-01-speaker-black.jpg -->
+          <div>
+            <h1>Spotify, Pandora</h1>
+            <h2>All your favorite music apps play instantly</h2>
+            <a href="#">Shop wireless speakers</a>
+          </div>
+        </div>
+        <div class="slide-2">
+          <div>
+            <h1>Spotify, Pandora</h1>
+            <h2>All your favorite music apps play instantly</h2>
+            <a href="#">Shop wireless speakers</a>
+          </div>
         </div>
       </section>
       <section class="best-sellers">
