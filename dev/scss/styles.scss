@@ -1,11 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.hero {
-  background-image: url("../images/banner-01-speaker-black.jpg");
-  width: 100%;
-  height: 75vh;
-}
+@use "reset";
+@use "typography";
+@use "header";
+@use "hero";
+@use "best-sellers";
