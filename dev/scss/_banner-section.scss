@@ -1,22 +1,36 @@
-.all-new,
-.feeling-lucky {
-  height: 25rem;
-  color: white;
+.banner-section {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  img {
-    position: absolute;
-    z-index: -999;
-  }
-  a,
-  a:visited {
-    border-radius: 5%;
-    background-color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1rem;
-    color: black;
-    margin: 1rem;
+  justify-content: space-between;
+  .all-new,
+  .feeling-lucky {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 0.5rem;
+    img {
+      filter: brightness(0.5);
+    }
+    h2 {
+      font-weight: 400;
+    }
+    div {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 1rem;
+    }
+    a,
+    a:visited {
+      border-radius: 5%;
+      background-color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 1rem;
+      color: black;
+      margin: 1rem;
+    }
   }
 }
