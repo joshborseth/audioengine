@@ -4,6 +4,7 @@ $(".slider").slick({
   infinite: true,
   speed: 1000,
   fade: true,
+  dotsClass: "slick-dots",
   prevArrow:
     '<button type="button" class="slick-prev image-button right"><i class="fa-solid fa-angle-right"></i></button>',
   nextArrow:
