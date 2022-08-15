@@ -2,7 +2,10 @@
 $(".slider").slick({
   dots: true,
   infinite: true,
-  speed: 100,
+  speed: 1000,
   fade: true,
-  prevArrow: '<button type="button" class="slick-prev"></button>',
+  prevArrow:
+    '<button type="button" class="slick-prev image-button right"><i class="fa-solid fa-angle-right"></i></button>',
+  nextArrow:
+    '<button type="button" class="slick-next image-button left"><i class="fa-solid fa-angle-left"></i></button>',
 });
