@@ -20,6 +20,8 @@
   a,
   a:visited {
     @include button;
+    background-color: white;
+    color: black;
   }
 }
 .feeling-lucky {
