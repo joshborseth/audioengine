@@ -1,0 +1,27 @@
+@use "mixins" as *;
+
+.all-new,
+.feeling-lucky {
+  background-image: url("../images/bg-all-new-section-phone-square.jpg");
+  background-position: bottom 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  color: white;
+  height: 20rem;
+  div {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  a,
+  a:visited {
+    @include button;
+  }
+}
+.feeling-lucky {
+  background-image: url("../images/bg-feeling-lucky-section-phone-square.jpg");
+}
