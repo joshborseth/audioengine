@@ -1,0 +1,23 @@
+.this-is-ae {
+  position: relative;
+  i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: scale(5);
+    color: #fc851e;
+  }
+  h2 {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 1.75rem;
+    font-weight: 900;
+  }
+}

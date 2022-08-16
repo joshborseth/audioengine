@@ -1,0 +1,39 @@
+.bottom-links {
+  padding: 3rem 1rem 1rem;
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    margin: 1rem 0;
+  }
+  li a {
+    background-color: black;
+    height: 3rem;
+    width: 3rem;
+    margin: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    i {
+      color: white;
+      scale: 1.5;
+    }
+  }
+  .top {
+    color: #fc851e;
+    i {
+      margin: 0.25rem;
+    }
+  }
+  .email {
+    color: black;
+    i {
+      scale: 2;
+      margin: 2rem 1rem 2rem 1rem;
+    }
+  }
+}
