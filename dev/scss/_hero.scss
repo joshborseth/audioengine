@@ -1,10 +1,14 @@
-// .hero {
-//   width: 100%;
-//   height: 75vh;
-// }
+h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  margin: 0;
+}
 .slick-list,
 .slick-track {
   height: 100%;
+}
+.hero .slick-slide div {
+  display: none;
 }
 .hero {
   position: relative;
@@ -32,6 +36,7 @@
   margin: auto;
   list-style-type: none;
   justify-content: center;
+  gap: 0.5rem;
   button {
     background-color: #fc851e;
     color: #fc851e;
@@ -65,14 +70,16 @@
   left: unset;
   right: 1rem;
 }
-.slide-1 {
-  background: url("../images/banner-01-speaker-black.jpg");
+
+.hero .slick-slide {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: #666;
-
-  & > div {
+}
+@media only screen and (min-width: 43.75em) {
+  .hero .slick-slide div {
+    display: block;
     position: absolute;
     right: 0;
     top: 4rem;
@@ -82,8 +89,29 @@
     h2 {
       text-transform: unset;
       margin-bottom: 2rem;
+      font-size: 3rem;
+      font-weight: 300;
     }
   }
 }
+.slide-1 {
+  background: url("../images/banner-01-speaker-black.jpg");
+}
 .slide-2 {
+  background: url("../images/banner-02-bluetooth-receiver.jpg");
+}
+.slide-3 {
+  background: url("../images/banner-03-speaker-brown.jpg");
+}
+.slide-4 {
+  background: url("../images/banner-04-speaker-brown.jpg");
+}
+.slide-5 {
+  background: url("../images/banner-05-speaker-red.jpg");
+}
+.slide-6 {
+  background: url("../images/banner-06-speaker-black.jpg");
+}
+.slide-7 {
+  background: url("../images/banner-07-speaker-white.jpg");
 }
