@@ -1,7 +1,12 @@
-# FWD HTML Project
+# AudioEngine Mock Website
 
-This is an FWD HTML project.
+Jed Borseth, Josh Borseth, Shaun Duffy
 
-BUTTON COLOR: #fc851e, #ffffff
+Stack: HTML, SCSS, jQuery, Gulp
 
-TEXT COLOR: #666666, #000000
+https://learn.bcit.ca/d2l/le/calendar/850786/event/2588126/detailsview#2588126
+
+Icons: https://fontawesome.com/
+Slider: https://kenwheeler.github.io/slick/
+Fonts: https://fonts.google.com/specimen/Source+Sans+Pro?query=Source+Sans+Pro
+Images: https://audioengine.com/
