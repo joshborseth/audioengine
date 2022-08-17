@@ -1,8 +1,8 @@
 @use "mixins" as *;
-
+@use "variables" as *;
 .story {
   background-image: url("../images/bg-our-story-section-phone-square.jpg");
-  background-position: bottom 0;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -20,6 +20,7 @@
     }
     p {
       padding: 1rem;
+      max-width: 20rem;
     }
     span {
       font-style: italic;
@@ -28,5 +29,29 @@
   a,
   a:visited {
     @include button;
+  }
+}
+@media only screen and (min-width: #{$mediaQuery45}) {
+  .story {
+    background-image: url("../images/bg-our-story-section-tablet.jpg");
+    background-position: bottom;
+    div {
+      background-color: transparent;
+      p {
+        max-width: 30rem;
+      }
+    }
+  }
+}
+@media only screen and (min-width: #{$mediaQuery63}) {
+  .story {
+    background-image: url("../images/bg-our-story-section.jpg");
+    background-position: bottom;
+    div {
+      background-color: transparent;
+      p {
+        max-width: 40rem;
+      }
+    }
   }
 }
