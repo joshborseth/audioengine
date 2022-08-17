@@ -22,6 +22,11 @@
     font-size: 1.75rem;
     font-weight: 900;
   }
+  @media (min-width: #{$mediaQuery63}) {
+    & h2 {
+      font-size: 4rem;
+    }
+  }
 }
 
 .video {
