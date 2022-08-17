@@ -1,19 +1,25 @@
-// .hero {
-//   background-image: url("../images/banner-01-speaker-black.jpg");
-
-// }
-nav ul {
-  display: none;
-}
 header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  padding: 0.5rem;
   background-color: black;
-  height: 3rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  height: 4rem;
   z-index: 999;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button {
+      background-color: transparent;
+      cursor: pointer;
+      border: none;
+    }
+    i {
+      margin: 1rem;
+      color: white;
+      transform: scale(3, 2);
+    }
+  }
 }
