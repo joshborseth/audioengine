@@ -1,3 +1,4 @@
+@use "variables" as *;
 h1 {
   text-transform: uppercase;
   font-size: 4rem;
@@ -75,7 +76,7 @@ h1 {
   left: unset;
   right: 1rem;
 }
-@media only screen and (min-width: 63.25em) {
+@media only screen and (min-width: #{$mediaQuery63}) {
   .hero .slick-slide div {
     display: block;
     position: absolute;
