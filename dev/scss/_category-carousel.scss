@@ -63,8 +63,9 @@
     }
   }
   .category-title {
-    width: 100%;
     text-align: center;
+    width: 100%;
+    margin: 1rem 0;
   }
 }
 @media ( min-width: #{$mediaQuery63}) {
