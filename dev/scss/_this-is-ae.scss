@@ -1,3 +1,4 @@
+@use "variables" as *;
 .this-is-ae {
   cursor: pointer;
   position: relative;
@@ -64,7 +65,7 @@
 .close-video:hover {
   background-color: #fc851e;
 }
-@media (min-width: $mediaQuery45) {
+@media (min-width: #{$mediaQuery45}) {
   .videoEl {
     width: 60%;
     border-width: 1rem;

@@ -35,3 +35,15 @@ $("#hamburger-btn").on("click", () => {
     i = 0;
   }
 });
+
+$("#main-navigation");
+let mediaQuery = window.matchMedia("(min-width:45em)");
+const checkQueries = () => {
+  if (mediaQuery) {
+    console.log("matches");
+  } else {
+    console.log("doesnt match");
+  }
+};
+checkQueries();
+mediaQuery.addEventListener("change", checkQueries);
