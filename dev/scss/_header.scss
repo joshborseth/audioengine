@@ -1,3 +1,4 @@
+@use "variables" as *;
 header {
   background-color: black;
   display: flex;
@@ -52,6 +53,22 @@ header {
       color: white;
       text-decoration: none;
       padding: 0.5rem;
+    }
+  }
+}
+
+@media only screen and (min-width: #{$mediaQuery63}) {
+  header {
+    flex-wrap: nowrap;
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 1rem;
+      align-items: center;
+      height: 4rem;
+      ul:first-of-type {
+        display: flex;
+      }
     }
   }
 }

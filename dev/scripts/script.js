@@ -36,7 +36,7 @@ $("#hamburger-btn").on("click", () => {
 });
 
 $("#main-navigation");
-let mediaQuery = window.matchMedia("(min-width:45em)");
+let mediaQuery = window.matchMedia("(min-width:63.25em)");
 const checkQueries = () => {
   if (mediaQuery.matches) {
     $("#main-navigation").show();
