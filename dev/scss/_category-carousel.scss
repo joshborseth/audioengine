@@ -1,10 +1,15 @@
+@use "variables" as *;
+
+
 .category-carousel {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   h2 {
     width: 100%;
   }
+
   a {
     justify-self: center;
     background-repeat: no-repeat;
@@ -23,27 +28,35 @@
     text-align: center;
     margin: 0.5rem;
   }
+
   .sonos {
     background-image: url("../images/shop-slider-01-speaker-white.jpg");
   }
+
   .siri {
     background-image: url("../images/shop-slider-02-speaker-brown.jpg");
   }
+
   .turntable {
     background-image: url("../images/shop-slider-03-speakers-brown.jpg");
   }
+
   .tv-room {
     background-image: url("../images/shop-slider-04-speakers-brown.jpg");
   }
+
   .kitchen {
     background-image: url("../images/shop-slider-05-speakers-brown.jpg");
   }
+
   .patio {
     background-image: url("../images/shop-slider-06-speaker-brown.jpg");
   }
+
   .office {
     background-image: url("../images/shop-slider-07-speakers-white.jpg");
   }
+
   .bedroom {
     background-image: url("../images/shop-slider-08-speakers-white.jpg");
   }

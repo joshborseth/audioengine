@@ -1,15 +1,18 @@
 @use "variables" as *;
+
 .this-is-ae {
   cursor: pointer;
   position: relative;
+
   i {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     transform: scale(5);
-    color: #fc851e;
+    color: $button-color;
   }
+
   h2 {
     position: absolute;
     top: 15%;
@@ -34,20 +37,24 @@
   display: grid;
   place-items: center;
 }
+
 .videoEl {
   z-index: inherit;
   position: relative;
   border: 0.3rem solid #fff;
   width: 90%;
 }
+
 .videoEl video:focus {
   border: 2px solid rgb(136, 225, 255);
   outline: none;
   box-shadow: none;
 }
+
 .videoEl video {
   outline: none;
 }
+
 .close-video {
   cursor: pointer;
   position: absolute;
@@ -62,18 +69,22 @@
   border-radius: 3px;
   z-index: 200;
 }
+
 .close-video:hover {
-  background-color: #fc851e;
+  background-color: $button-color;
 }
-@media (min-width: #{$mediaQuery45}) {
+
+@media (min-width: #{$tabletmedia}) {
   .videoEl {
     width: 60%;
     border-width: 1rem;
   }
+
   .close-video {
     right: -2rem;
   }
 }
+
 .video-hide {
   display: none;
 }

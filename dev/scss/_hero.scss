@@ -1,23 +1,28 @@
 @use "variables" as *;
+
 h1 {
   text-transform: uppercase;
   font-size: 4rem;
   margin: 0;
 }
+
 .slick-list,
 .slick-track {
   height: 100%;
 }
+
 .hero .slick-slide div {
   display: none;
   color: #666;
 }
+
 .hero {
   position: relative;
+
   a,
   a:visited {
     border-radius: 5%;
-    background-color: #fc851e;
+    background-color: $button-color;
     text-transform: uppercase;
     text-decoration: none;
     padding: 1rem;
@@ -25,10 +30,12 @@ h1 {
     width: 50%;
     margin: 0 auto;
   }
+
   img {
     width: 100%;
   }
 }
+
 .slick-dots {
   display: flex;
   position: absolute;
@@ -41,10 +48,11 @@ h1 {
   justify-content: center;
   cursor: pointer;
   gap: 0.5rem;
+
   button {
     cursor: pointer;
-    background-color: #fc851e;
-    color: #fc851e;
+    background-color: $button-color;
+    color: $button-color;
     border-radius: 50%;
     border: none;
     width: 1rem;
@@ -52,9 +60,11 @@ h1 {
     opacity: 0.5;
   }
 }
+
 .slick-active button {
   opacity: 1;
 }
+
 .image-button {
   cursor: pointer;
   position: absolute;
@@ -67,16 +77,19 @@ h1 {
   z-index: 99;
   background: none;
   border: none;
+
   & i {
-    color: #fc851e;
+    color: $button-color;
     font-size: 4rem;
   }
 }
+
 .right {
   left: unset;
   right: 1rem;
 }
-@media only screen and (min-width: #{$mediaQuery63}) {
+
+@media only screen and (min-width: #{$desktopmedia}) {
   .hero .slick-slide div {
     display: block;
     position: absolute;
@@ -85,6 +98,7 @@ h1 {
     width: 50%;
     padding: 2rem;
     background-color: #ffffffa4;
+
     h2 {
       text-transform: unset;
       margin-bottom: 2rem;

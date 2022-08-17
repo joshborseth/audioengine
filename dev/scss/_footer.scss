@@ -1,13 +1,19 @@
+@use "variables" as *;
+
+
 footer {
   background-color: #ebebeb;
   border-top: solid black 1px;
   padding: 2rem 1rem;
+
   ul {
     list-style-type: none;
   }
+
   li {
     margin: 0.5rem;
   }
+
   a {
     color: #000;
     text-decoration: none;

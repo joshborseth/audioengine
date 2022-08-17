@@ -1,20 +1,26 @@
+@use "variables" as *;
+
+
 .best-sellers {
   img {
     width: 50%;
   }
+
   a,
   a:visited {
-    background-color: #fc851e;
+    background-color: $button-color;
     padding: 1rem;
     color: white;
     text-decoration: none;
     border-radius: 5%;
     text-transform: uppercase;
   }
+
   h2 {
     font-size: 2.25rem;
     font-weight: 300;
   }
+
   article {
     div {
       display: flex;
