@@ -12,3 +12,11 @@ $(".slider").slick({
   // autoplay: true,
   // autoplaySpeed: 5000,
 });
+$(".this-is-ae").on("click", (e) => {
+  console.log(e.target);
+
+  if (e.target !== $("#video-el")[0]) {
+    $("#video-el")[0].pause();
+    $(".video").toggleClass("video-hide");
+  }
+});
