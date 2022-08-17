@@ -1,4 +1,5 @@
 .this-is-ae {
+  cursor: pointer;
   position: relative;
   i {
     position: absolute;
@@ -47,6 +48,7 @@
   outline: none;
 }
 .close-video {
+  cursor: pointer;
   position: absolute;
   border: none;
   background-color: #000;

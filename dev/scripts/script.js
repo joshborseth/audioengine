@@ -20,26 +20,18 @@ $(".this-is-ae").on("click", (e) => {
     $(".video").toggleClass("video-hide");
   }
 });
-
-//menu stuff
-const hb = document.getElementById("hamburger-btn");
-const nav = document.getElementById("main-navigation");
-let mediaQuery = window.matchMedia("(max-width:56.25em)");
-
-const checkQueries = () => {
-  if (mediaQuery.matches) {
-    nav.classList.add("hidden");
-    nav.classList.remove("nav-animate");
-    hb.classList.remove("hidden");
-  } else {
-    nav.classList.remove("hidden");
-    hb.classList.add("hidden");
+$("#main-navigation").animate({ height: "toggle" }, 0);
+const buttons = [
+  '<i class="fa-solid fa-x"></i>',
+  '<i class="fa-solid fa-bars"></i>',
+];
+let i = 0;
+$("#hamburger-btn").on("click", () => {
+  $("#hamburger-btn")[0].children[0].remove();
+  $("#hamburger-btn").append(buttons[i]);
+  $("#main-navigation").animate({ height: "toggle" });
+  i++;
+  if (i === 2) {
+    i = 0;
   }
-};
-checkQueries();
-mediaQuery.addEventListener("change", checkQueries);
-
-hb.addEventListener("click", (e) => {
-  nav.classList.toggle("hidden");
 });
-//menu stuff end

@@ -9,10 +9,10 @@ h1 {
 }
 .hero .slick-slide div {
   display: none;
+  color: #666;
 }
 .hero {
   position: relative;
-  margin-top: 4rem;
   a,
   a:visited {
     border-radius: 5%;
@@ -38,8 +38,10 @@ h1 {
   margin: auto;
   list-style-type: none;
   justify-content: center;
+  cursor: pointer;
   gap: 0.5rem;
   button {
+    cursor: pointer;
     background-color: #fc851e;
     color: #fc851e;
     border-radius: 50%;
@@ -53,6 +55,7 @@ h1 {
   opacity: 1;
 }
 .image-button {
+  cursor: pointer;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -71,13 +74,6 @@ h1 {
 .right {
   left: unset;
   right: 1rem;
-}
-
-.hero .slick-slide {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #666;
 }
 @media only screen and (min-width: 63.25em) {
   .hero .slick-slide div {
