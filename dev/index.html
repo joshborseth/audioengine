@@ -38,23 +38,30 @@
     />
     <!-- End Slick CDN -->
     <script src="scripts/script.min.js?cachebuster=1" defer></script>
+    <script src="scripts/menu.js" type="module" defer></script>
   </head>
   <body>
     <header id="top">
       <nav>
         <img src="./images/logo-audioengine.png" alt="Audio Engine" />
-        <ul>
-          <li>Speakers</li>
-          <li>Components</li>
-          <li>Deals</li>
-          <li>Explore</li>
-          <li>Support</li>
-        </ul>
-        <ul>
-          <li><i class="fa-solid fa-location-dot"></i></li>
-          <li><i class="fa-solid fa-magnifying-glass"></i></li>
-          <li><i class="fa-solid fa-cart-shopping"></i></li>
-        </ul>
+        <button id="hamburger-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <!-- <i class="fa-solid fa-x"></i> -->
+        <div id="main-navigation">
+          <ul>
+            <li>Speakers</li>
+            <li>Components</li>
+            <li>Deals</li>
+            <li>Explore</li>
+            <li>Support</li>
+          </ul>
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i></li>
+            <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li><i class="fa-solid fa-cart-shopping"></i></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
