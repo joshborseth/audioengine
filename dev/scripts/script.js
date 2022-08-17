@@ -21,28 +21,32 @@ $(".this-is-ae").on("click", (e) => {
   }
 });
 $("#main-navigation").animate({ height: "toggle" }, 0);
-const buttons = [
-  '<i class="fa-solid fa-x"></i>',
-  '<i class="fa-solid fa-bars"></i>',
-];
-let i = 0;
+let isOpen = false;
 $("#hamburger-btn").on("click", () => {
-  $("#hamburger-btn")[0].children[0].remove();
-  $("#hamburger-btn").append(buttons[i]);
+  isOpen = !isOpen;
+  $("#hamburger-btn i").remove();
   $("#main-navigation").animate({ height: "toggle" });
-  i++;
-  if (i === 2) {
-    i = 0;
+  if (isOpen) {
+    let button = '<i class="fa-solid fa-x"></i>';
+    $("#hamburger-btn").append(button);
+  } else {
+    let button = '<i class="fa-solid fa-bars"></i>';
+    $("#hamburger-btn").append(button);
   }
 });
 
 $("#main-navigation");
 let mediaQuery = window.matchMedia("(min-width:45em)");
 const checkQueries = () => {
-  if (mediaQuery) {
-    console.log("matches");
+  if (mediaQuery.matches) {
+    $("#main-navigation").show();
+    $("#hamburger-btn").hide();
   } else {
-    console.log("doesnt match");
+    $("#hamburger-btn").show();
+    $("#main-navigation").hide();
+    $("#hamburger-btn i").removeClass("fa-x");
+    $("#hamburger-btn i").addClass("fa-bars");
+    isOpen = false;
   }
 };
 checkQueries();
