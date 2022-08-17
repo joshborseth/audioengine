@@ -1,3 +1,4 @@
+@use "variables" as *;
 footer {
   background-color: #ebebeb;
   border-top: solid black 1px;
@@ -11,5 +12,10 @@ footer {
   a {
     color: #000;
     text-decoration: none;
+  }
+  @media only screen and (min-width: #{$mediaQuery33}) {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 2rem;
   }
 }
