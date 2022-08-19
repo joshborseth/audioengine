@@ -1,4 +1,7 @@
-// Functions for sliders
+// Init Mobile Menu as Closed
+$("#main-navigation").animate({ height: "toggle" }, 0);
+
+// Hero Slider Settings
 $(".slider").slick({
   dots: true,
   infinite: true,
@@ -10,11 +13,11 @@ $(".slider").slick({
     '<button type="button" class="slick-next image-button left"><i class="fa-solid fa-angle-left"></i></button>',
   nextArrow:
     '<button type="button" class="slick-prev image-button right"><i class="fa-solid fa-angle-right"></i></button>',
-  // autoplay: true,
-  // autoplaySpeed: 5000,
+  autoplay: true,
+  autoplaySpeed: 5000,
 });
-
-function categorySlider() {
+// Category Slider & News Slider
+function smallSliders() {
   if (window.innerWidth >= 427) {
     $(".category-carousel").slick({
       dots: false,
@@ -88,18 +91,21 @@ function categorySlider() {
     });
   }
 }
-categorySlider();
-let categoryQuery = window.matchMedia("(min-width:427px)");
-categoryQuery.addEventListener("change", categorySlider);
-$(".this-is-ae").on("click", (e) => {
-  console.log(e.target);
+smallSliders();
+let mediaQuery427 = window.matchMedia("(min-width:427px)");
+mediaQuery427.addEventListener("change", smallSliders);
+// End Sliders
 
+// Video Popup
+$(".this-is-ae").on("click", (e) => {
+  e.preventDefault();
   if (e.target !== $("#video-el")[0]) {
     $("#video-el")[0].pause();
     $(".video").toggleClass("video-hide");
   }
 });
-$("#main-navigation").animate({ height: "toggle" }, 0);
+
+// Hamburger Menu
 let isOpen = false;
 $("#hamburger-btn").on("click", () => {
   isOpen = !isOpen;
@@ -115,9 +121,9 @@ $("#hamburger-btn").on("click", () => {
 });
 
 $("#main-navigation");
-let mediaQuery = window.matchMedia("(min-width:63.25em)");
+let mediaQuery63 = window.matchMedia("(min-width:63.25em)");
 const checkQueries = () => {
-  if (mediaQuery.matches) {
+  if (mediaQuery63.matches) {
     $("#main-navigation").show();
     $("#hamburger-btn").hide();
   } else {
@@ -129,4 +135,4 @@ const checkQueries = () => {
   }
 };
 checkQueries();
-mediaQuery.addEventListener("change", checkQueries);
+mediaQuery63.addEventListener("change", checkQueries);
