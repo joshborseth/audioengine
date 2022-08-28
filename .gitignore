@@ -103,7 +103,3 @@ dev/scripts/script.min.js.map
 *.swp
 *.vi
 *~
-
-# gitignoring the dist
-
-dist
